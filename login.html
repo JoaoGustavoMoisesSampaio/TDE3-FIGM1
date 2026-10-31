@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Amazon – Login</title><link rel="stylesheet" href="css/style.css"></head><body>
+<div class="lg"><a class="logo" href="index.html" style="font-size:32px">amazon<b style="color:#ff9900">.com.br</b></a>
+<form class="box" id="f" novalidate><h1>Fazer login</h1><label for="e">E-mail ou telefone</label><input id="e" type="email" autocomplete="username"><label for="p">Senha</label><input id="p" type="password" autocomplete="current-password"><div class="err" id="er"></div><button class="btn">Continuar</button></form>
+<p style="margin:18px 0;font-size:13px">Novo na Amazon?</p><a class="btn" style="display:block;border-radius:8px;background:#fff;border:1px solid #888;text-decoration:none" href="#">Crie sua conta Amazon</a>
+<p style="margin-top:36px;font-size:11px;color:#555">© 1996-2026, Amazon.com, Inc. ou suas afiliadas</p></div>
+<script>f.onsubmit=ev=>{ev.preventDefault();er.textContent=!/^\S+@\S+\.\S+$/.test(e.value)?"Digite um e-mail válido.":p.value.length<6?"A senha deve ter ao menos 6 caracteres.":"";if(!er.textContent)location="index.html"}</script></body></html>
